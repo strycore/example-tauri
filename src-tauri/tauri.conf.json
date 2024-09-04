@@ -8,12 +8,20 @@
     "beforeBuildCommand": "pnpm build",
     "frontendDist": "../dist"
   },
+  "plugins": {
+    "updater": {
+      "endpoints": [
+        "https://gist.githubusercontent.com/strycore/28651033659a4be495b6aa99ed141c08/raw/682608f2f052863f537bd13bef92420220a0e17d/latest.json"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDUyNDRERDBEMUNFNUE3OTUKUldTVnArVWNEZDFFVXJXSEtpejJqZlV3VEpLNzJtc2RzREJjTzZ5R0hOV01jMWRtS1MxdEhydE8K"
+    }
+  },
   "app": {
     "windows": [
       {
         "title": "example-tauri",
-        "width": 800,
-        "height": 600
+        "width": 1920,
+        "height": 1080
       }
     ],
     "security": {
