@@ -1,6 +1,6 @@
 {
   "productName": "example-tauri",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "identifier": "one.playtron.example",
   "build": {
     "beforeDevCommand": "pnpm dev",
@@ -10,6 +10,9 @@
   },
   "plugins": {
     "updater": {
+      "windows": {
+        "installMode": "passive"
+      },
       "endpoints": [
         "https://gist.githubusercontent.com/strycore/28651033659a4be495b6aa99ed141c08/raw/682608f2f052863f537bd13bef92420220a0e17d/latest.json"
       ],
@@ -30,6 +33,7 @@
   },
   "bundle": {
     "active": true,
+    "createUpdaterArtifacts": true,
     "targets": "all",
     "icon": [
       "icons/32x32.png",
