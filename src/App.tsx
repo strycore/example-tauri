@@ -48,9 +48,7 @@ function App() {
       <p>{greetMsg}</p>
       <p>Version 0.1.3</p>
       <div>
-        <button onClick={() => checkForAppUpdates(true)}>
-          Check for Updates
-        </button>
+        <button onClick={() => checkForAppUpdates()}>Check for Updates</button>
       </div>
     </div>
   );
