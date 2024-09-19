@@ -20,9 +20,6 @@ jobs:
         with:
           version: 9.10.0
       - uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: "npm"
+      - name: Setup Node
+        run: pnpm env use -g ${{ matrix.node-version }}
       - run: pnpm run build --if-present
