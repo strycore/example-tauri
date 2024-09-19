@@ -3,8 +3,10 @@
 
 name: Tauri Release Workflow
 
-on: [release]
-
+on:
+  push:
+    branches:
+      - release
 jobs:
   publish-tauri:
     permissions:
