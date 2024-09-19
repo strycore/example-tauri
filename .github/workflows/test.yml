@@ -24,4 +24,4 @@ jobs:
         run: pnpm env use -g ${{ matrix.node-version }}\
       - name: Install dependencies
         run: pnpm install
-      - run: pnpm run build --if-present
+      - run: pnpm run build
