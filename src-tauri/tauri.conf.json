@@ -1,6 +1,6 @@
 {
   "productName": "example-tauri",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "identifier": "one.playtron.example",
   "build": {
     "beforeDevCommand": "pnpm dev",
@@ -13,7 +13,9 @@
       "windows": {
         "installMode": "passive"
       },
-      "endpoints": ["https://mathieu.comandon.org/example/latest.json"],
+      "endpoints": [
+        "https://github.com/strycore/example-tauri/releases/latest/download/latest.json"
+      ],
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDUyNDRERDBEMUNFNUE3OTUKUldTVnArVWNEZDFFVXJXSEtpejJqZlV3VEpLNzJtc2RzREJjTzZ5R0hOV01jMWRtS1MxdEhydE8K"
     }
   },
